@@ -1,0 +1,57 @@
+/* Single Ticket Card */
+.ticket-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.ticket-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.ticket-value {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.ticket-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .ticket-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .ticket-row {
+        width: 45%;
+    }
+}
+
+
+/* Check-in Button Styling */
+.checkin-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkin-button:hover {
+    background-color: #0056b3;
+}
