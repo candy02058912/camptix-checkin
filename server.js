@@ -87,6 +87,11 @@ app.get('/data', (req, res) => {
   }
 });
 
+// List all attendees.
+app.get('/allData', (req, res) => {
+  res.json({ success: true, data: Object.values(csvData) });
+});
+
 app.use(express.static('public')); // Serve your HTML, CSS, JS from a 'public' folder
 
 app.listen(port, () => {
